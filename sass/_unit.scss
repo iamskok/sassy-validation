@@ -1,0 +1,31 @@
+/**
+*
+* Tests whether `$var` is unit.
+*
+* @group SassyValidation
+*
+* @param {*} $value  - string or list to test
+*
+* @return {bool}
+*
+* @example
+* is_unit(1.618rem) //returns true
+* is_unit(-1000px) 	//returns true
+* is_unit('test') 	//returns false
+* is_unit(777) 		//returns false
+*
+* @author Vova Skok
+*
+*/
+
+@function is_unit($var) {
+	@if type-of($var) == string {
+
+		@return if(index($UNITS, $var), true, false);
+
+	} @else {
+
+		@return false;
+
+	}
+}

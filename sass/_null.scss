@@ -1,0 +1,32 @@
+/**
+*
+* Tests whether `$var` is bool.
+*
+* @group SassyValidation
+*
+* @param {*} $var  - check for bool type
+*
+* @return {bool}
+*
+* @example
+* is_null(null)    	//returns true
+* is_null(false)   	//returns false
+* is_null(0)       	//returns false
+* is_null('hello') 	//returns false
+* is_null(113)     	//returns false
+*
+* @author Vova Skok
+*
+*/
+
+@function is_null($var) {
+	@if $var == null {
+
+		@return true;
+
+	} @else {
+
+		@return false;
+
+	}
+}

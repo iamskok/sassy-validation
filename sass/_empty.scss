@@ -1,0 +1,41 @@
+/**
+*
+* Tests whether `$var` is empty.
+*
+* @group SassyValidation
+*
+* @param {*} $var  - check for emptiness
+*
+* @return {bool}
+*
+* @example
+* is_empty('')      	//returns true
+* is_empty(())      	//returns true
+* is_empty('test')	//returns false
+*
+* @author Vova Skok
+*
+*/
+
+@function is_empty($var) {
+	@if type-of($var) == list and
+		length($var) == 0 {
+
+		@return true;
+
+	} @else if $var == null  {
+
+		@return true;
+
+	} @else if type-of($var) == string and
+		str-length($var) == 0 {
+
+		@return true;
+
+	} @else {
+
+		@return false;
+
+	}
+
+}

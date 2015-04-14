@@ -1,0 +1,34 @@
+/**
+*
+* Tests whether `$var` is negative.
+*
+* @group SassyValidation
+*
+* @require measure
+*
+* @param {*} $value  - check for negative values
+*
+* @return {bool}
+*
+* @example
+* is_negative(-5)     	//returns true
+* is_negative(-10px)  	//returns false
+* is_negative(300)    	//returns false
+* is_negative('test') 	//returns false
+* is_negative(0)      	//returns false
+*
+* @author Vova Skok
+*
+*/
+
+@function is_negative($var) {
+	@if (type-of($var) == number) and $var < 0 {
+
+		@return true;
+
+	} @else {
+
+		@return false;
+
+	}
+}

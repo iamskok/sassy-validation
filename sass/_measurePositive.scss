@@ -1,0 +1,35 @@
+/**
+*
+* Tests whether `$var` is a measure and has a positive value.
+*
+* @group SassyValidation
+*
+* @require is-number
+* @require is-measure
+* @require is-positive
+*
+* @param {*} $var  - check whether $var is a positive measure
+*
+* @return {bool}
+*
+* @example
+* is-measurePositive(10px)   	//returns true
+* is-measurePositive(0px)   	//returns false
+* is-measurePositive(0)   	//returns false
+* is-measurePositive(-777px)  //returns false
+*
+* @author Vova Skok
+*
+*/
+
+@function is-measurePositive($var) {
+	@if is-measure($var) and $var > 0 {
+
+		@return true;
+
+	} @else {
+
+		@return false;
+
+	}
+}

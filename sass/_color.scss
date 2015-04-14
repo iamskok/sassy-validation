@@ -1,0 +1,30 @@
+/**
+*
+* Tests whether `$var` is color.
+*
+* @group SassyValidation
+*
+* @param {*} $var  - check for color type
+*
+* @return {bool}
+*
+* @example
+* is_color(#333)    	//returns true
+* is_color(black) 	//returns true
+* is_color(test)    	//returns false
+*
+* @author Vova Skok
+*
+*/
+
+@function is_color($var) {
+	@if type-of($var) == color {
+
+		@return true;
+
+	} @else {
+
+		@return false;
+
+	}
+}

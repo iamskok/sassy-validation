@@ -1,0 +1,171 @@
+/**
+*
+* Validates input against various tests
+*
+* @group SassyValidation
+*
+* @param {value} $var - a variable to be tested
+* @param {list|string|any} $validations - the validations to test (e.g. measure, string, number,unit). "any" means it can be any type so there won't be any kind of test.
+*
+* @return {bool}
+*
+* @throws '$var is not a known validation type.'
+*
+* @example
+* validate(1em, measure)     	//returns 1em
+* validate(em, unit string)  	//returns em
+* validate(1, number string) 	//returns 1
+* validate(1, number)        	//returns 1
+* validate(1, string)        	//returns false
+*
+* @author Vova Skok
+*
+*/
+
+@function validate($var, $validations) {
+	//set a list of testable validation types
+
+	$allTypes: bool, color, empty, float, integer, list, map, measure, measureNegative, measurePositive, negative, null, number, positive, string, unit;
+
+	//do not test anything if type equals "any"
+	@if $validations == any {
+
+		@return true;
+
+	}
+
+	//if there is more than one validation test
+	@if length($validations) > 1 {
+		//break function if validation is not a known data type
+		@each $validation in $validations {
+			@if not index($allTypes, $validation) {
+
+				@warn '#{$validation} is not a known validation type.';
+
+				@return false;
+
+			}
+		}
+	}
+
+	//collect validation errors
+	$errors: ();
+	//check each validation and set 1 for each failure
+	@each $validation in $validations {
+		@if $validation == measure {
+			@if not is_measure($var) {
+				$errors: append($errors, 1);
+			}
+		}
+
+		@else if $validation == list {
+			@if not is_list($var) {
+				$errors: append($errors, 1);
+			}
+		}
+
+		@else if $validation == color {
+			@if not is_color($var) {
+				$errors: append($errors, 1);
+			}
+		}
+
+		@else if $validation == bool {
+			@if not is_bool($var) {
+				$errors: append($errors, 1);
+			}
+		}
+
+		@else if $validation == null {
+			@if not is_null($var) {
+				$errors: append($errors, 1);
+			}
+		}
+
+		@else if $validation == string {
+			@if not is_string($var) {
+				$errors: append($errors, 1);
+			}
+		}
+
+		@else if $validation == number {
+			@if not is_number($var) {
+				$errors: append($errors, 1);
+			}
+		}
+
+		@else if $validation == unit {
+			@if not is_unit($var) {
+				$errors: append($errors, 1);
+			}
+		}
+		@else if $validation == integer {
+			@if not is_integer($var) {
+				$errors: append($errors, 1);
+			}
+		}
+		@else if $validation == float {
+			@if not is_float($var) {
+				$errors: append($errors, 1);
+			}
+		}
+		@else if $validation == negative {
+			@if not is_negative($var) {
+				$errors: append($errors, 1);
+			}
+		}
+		@else if $validation == positive {
+			@if not is_positive($var) {
+				$errors: append($errors, 1);
+			}
+		}
+		@else if $validation == map {
+			@if not is_map($var) {
+				$errors: append($errors, 1);
+			}
+		}
+		@else if $validation == measureNegative {
+			@if not is_measureNegative($var) {
+				$errors: append($errors, 1);
+			}
+		}
+		@else if $validation == measurePositive {
+			@if not is_measurePositive($var) {
+				$errors: append($errors, 1);
+			}
+		}
+		@else if $validation == empty {
+			@if not is_empty($var) {
+				$errors: append($errors, 1);
+			}
+		}
+
+		//as we checked earlier $validation must be one of our data types
+		//so this condition my never be encountered but just in case..return false
+		@else {
+
+			@return false;
+
+		}
+	}
+
+	//throw an error if there are as many validation errors as validation tests because all checked types failed
+	@if length($errors) >= length($validations) {
+
+		@return false;
+
+	}
+	//at least one of tested types must be valid
+	@else {
+
+		@return true;
+
+	}
+}
+
+// Short alias for `validate` function
+@function val($var, $validations) {
+
+	@return validate($var, $validations);
+
+}
