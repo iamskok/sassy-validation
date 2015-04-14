@@ -18,4 +18,6 @@
 @import "sass/_validationFunction.scss";
 @import "sass/_valFunction.scss";
 
-@debug val(144px, measure);
+h1 {
+	content: val(144px, measure);
+}
