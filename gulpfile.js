@@ -1,22 +1,19 @@
-'use strict';
+console.time('Gulp Run Time');
 
-var gulp 			= require('gulp'),
-	sass 			= require('gulp-ruby-sass'),
-	concat 			= require('gulp-concat'),
-	sassdoc			= require('gulp-sassdoc'),
-	deploy 		    = require('gulp-gh-pages');
+/**
+ * Tasks
+ *
+ * Configure the tasks to be loaded.
+ * Comment out what is not needed.
+ */
+var tasks = [
+  'styles',
+  'sassdoc',
+  'watch',
+  'default',
+];
 
-
-gulp.task('default', function() {
-	return gulp.src('sassy-validation.scss')
-    	.pipe(sass({
-    		style: 'expanded',
-    		precision: 10,
-        	lineNumbers : true
-    	}))
-    	.pipe(gulp.dest('build'))
-});
-
-gulp.task('watch', function() {
-	gulp.watch('**/*.scss', ['default']);
-});
+/**
+ * Task Loader (DO NOT EDIT)
+ */
+require('./gulp/utilities/loader')(tasks);

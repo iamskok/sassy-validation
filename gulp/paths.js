@@ -26,19 +26,6 @@ paths.styles = {
 };
 
 /**
- * JS Hint
- *
- * Lint Gulp files.
- */
-paths.jshint = {
-	gulp: [
-		'./gulpfile.js',
-		'./gulp/**/*.js',
-	],
-	config: './.jshintrc',
-};
-
-/**
  * Sassdoc
  *
  * SASS documentation system
@@ -46,6 +33,15 @@ paths.jshint = {
 paths.sassdoc = {
 	src: ROOT + '**/*.scss',
 	dest: './sassdoc/',
+};
+
+/**
+ * Github Pages
+ *
+ * Deploy to GH Pages
+ */
+paths.ghPages = {
+	src: './sassdoc',
 };
 
 module.exports = paths;
