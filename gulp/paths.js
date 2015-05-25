@@ -40,8 +40,8 @@ paths.sassdoc = {
  *
  * Deploy to GH Pages
  */
-paths.ghPages = {
-	src: './sassdoc',
+paths.deploy = {
+	src: './sassdoc/**/*',
 };
 
 module.exports = paths;

@@ -11,6 +11,7 @@ var tasks = [
   'sassdoc',
   'watch',
   'default',
+  'deploy',
 ];
 
 /**
