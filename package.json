@@ -1,18 +1,18 @@
 {
-  "name": "SassySuit",
+  "name": "sassy-validation",
   "version": "0.1.0",
-  "description": " The sassy framework you have been waiting for",
+  "description": " SASS library for validation data types",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SassySuit/SassySuit.git"
+    "url": "https://github.com/SassySuit/sassy-validation.git"
   },
   "keywords": [
     "SASS",
-    "framework",
+    "library",
     "CSS",
     "SCSS",
     "Sassy"
@@ -20,9 +20,9 @@
   "author": "Vova Skok",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SassySuit/SassySuit/issues"
+    "url": "https://github.com/SassySuit/sassy-validation/issues"
   },
-  "homepage": "https://github.com/SassySuit/SassySuit",
+  "homepage": "https://github.com/SassySuit/sassy-validation",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-clean": "^0.3.1",
