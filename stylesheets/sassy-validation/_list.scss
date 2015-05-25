@@ -1,33 +1,23 @@
-/**
-*
-* Tests whether `$var` is list.
-*
-* @group SassyValidation
-*
-* @param {*} $var  - check for list type
-*
-* @return {bool}
-*
-* @example
-* is_list(a b)          //returns true
-* is_list(1 2 3)        //returns true
-* is_list((test, test)) //returns true
-* is_list(test)         //returns false
-* is_list(1)            //returns false
-*
-* @author Vova Skok
-*
-*/
+///
+/// Tests whether `$var` is list.
+///
+/// @param {*} $var  - possible list type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-list(a b)              //returns true
+///   is-list(1 2 3)            //returns true
+///   is-list((test, test))     //returns true
+///   is-list(test)             //returns false
+///   is-list(1)                //returns false
+///
 
-@function is_list($var) {
+@function is-list($var) {
 	@if type-of($var) == list {
-
 		@return true;
-
 	}
 	@else {
-
 		@return false;
-
 	}
 }
