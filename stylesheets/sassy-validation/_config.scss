@@ -1,13 +1,7 @@
-/**
-*
-* List of possible units
-*
-* @group SassyValidation
-*
-* @type List
-*
-* @author Vova Skok
-*
-*/
+///
+/// List of all possible unit types
+///
+/// @type List
+///
 
-$UNITS: 'px' 'cm' 'mm' '%' 'ch' 'pica' 'in' 'em' 'rem' 'pt' 'pc' 'ex' 'vw' 'vh' 'vmin' 'vmax';
+$sv-units: 'px' 'cm' 'mm' '%' 'ch' 'pica' 'in' 'em' 'rem' 'pt' 'pc' 'ex' 'vw' 'vh' 'vmin' 'vmax';
