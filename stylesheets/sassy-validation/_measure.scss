@@ -1,46 +1,31 @@
-/**
-*
-* Tests whether `$var` is measure.
-*
-* @group SassyValidation
-*
-* @param {*} $var  - check for measure type
-*
-* @return {bool}
-*
-* @example
-* is_measure(1px) 	//returns true
-* is_measure(5em)   	//returns true
-* is_measure(5)     	//returns false
-* is_measure(test)  	//returns false
-* is_measure(em)    	//returns false
-*
-* @author Vova Skok
-*
-*/
+///
+/// Tests whether `$var` is measure.
+///
+/// @param {*} $var  - check for measure type
+///
+/// @return {bool}
+///
+/// @example
+///   is-measure(1px) 	  //returns true
+///   is-measure(5em)     //returns true
+///   is-measure(5)       //returns false
+///   is-measure(test)    //returns false
+///   is-measure(em)      //returns false
+///
 
-@function is_measure($var) {
+@function is-measure($var) {
 	@if type-of($var) == number {
 		@if unitless($var) {
-
 			@return false;
-
 		}
 	}
 	@else {
-
 		@return false;
-
 	}
-	@if not index($UNITS, unit($var)) {
-
+	@if not index($sv-units, unit($var)) {
 		@return false;
-
-
 	}
 	@else {
-
 		@return true;
-
 	}
 }
