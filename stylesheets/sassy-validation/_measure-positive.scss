@@ -1,11 +1,10 @@
 ///
 /// Tests whether `$var` is a positive measure.
 ///
-/// @require is-number
 /// @require is-measure
 /// @require is-positive
 ///
-/// @param {*} $var  - possible positive measure type variable
+/// @param {*} $var - possible positive measure type variable
 ///
 /// @return {bool}
 ///
@@ -17,7 +16,7 @@
 ///
 
 @function is-measure-positive($var) {
-	@if is-measure($var) and $var > 0 {
+	@if is-measure($var) and is-positive($var) {
 		@return true;
 	} @else {
 		@return false;
