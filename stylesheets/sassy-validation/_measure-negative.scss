@@ -1,35 +1,24 @@
-/**
-*
-* Tests whether `$var` is a measure and has a negative value.
-*
-* @group SassyValidation
-*
-* @require is-number
-* @require is-measure
-* @require is-negative
-*
-* @param {*} $var  - check whether $var is a positive measure
-*
-* @return {bool}
-*
-* @example
-* is-measureNegative(-10em)   	//returns true
-* is-measureNegative(0px)     	//returns false
-* is-measureNegative(0)       	//returns false
-* is-measureNegative(777rem) 		//returns false
-*
-* @author Vova Skok
-*
-*/
+///
+/// Tests whether `$var` is a negative measure.
+///
+/// @require is-measure
+/// @require is-negative
+///
+/// @param {*} $var - possible negative measure type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-measure-negative(-10em)   	 //returns true
+///   is-measure-negative(0px)     	 //returns false
+///   is-measure-negative(0)       	 //returns false
+///   is-measure-negative(777rem)    //returns false
+///
 
-@function is-measureNegative($var) {
-	@if is-measure($var) and $var < 0 {
-
+@function is-measure-negative($var) {
+	@if is-measure($var) and is-negative($var) {
 		@return true;
-
 	} @else {
-
 		@return false;
-
 	}
 }
