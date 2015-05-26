@@ -1,0 +1,5 @@
+{
+  "name": "sassy-validation",
+  "description": "SASS data type validation library",
+  "tags": ["utility", "helper", "validation", "data"]
+}
