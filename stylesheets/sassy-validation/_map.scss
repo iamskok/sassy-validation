@@ -1,33 +1,23 @@
-/**
-*
-* Tests whether `$var` is map.
-*
-* @group SassyValidation
-*
-* @param {*} $var  - check for list type
-*
-* @return {bool}
-*
-* @example
-* is_map(a: 1, b: 2)   		//returns true
-* is_map(1 2 3)        		//returns false
-* is_map((test, test))		//returns false
-* is_map(test)         		//returns false
-* is_map(1)            		//returns false
-*
-* @author Vova Skok
-*
-*/
+///
+/// Tests whether `$var` is map.
+///
+/// @param {*} $var  - possible map type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-map(a: 1, b: 2)   	  //returns true
+///   is-map(1 2 3)        	  //returns false
+///   is-map((test, test))    //returns false
+///   is-map(test)         	  //returns false
+///   is-map(1)            	  //returns false
+///
 
-@function is_map($var) {
+@function is-map($var) {
 	@if type-of($var) == map {
-
 		@return true;
-
 	}
 	@else {
-
 		@return false;
-
 	}
 }
