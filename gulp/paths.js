@@ -44,4 +44,11 @@ paths.deploy = {
 	src: './sassdoc/**/*',
 };
 
+/**
+ * Clean
+ *
+ * Remove sassdoc
+ */
+paths.clean = './sassdoc';
+
 module.exports = paths;

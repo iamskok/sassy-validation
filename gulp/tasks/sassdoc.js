@@ -10,7 +10,7 @@ var SASSDOC_OPTIONS = {
     basePath: 'https://github.com/SassySuit/sassy-validation',
 };
 
-gulp.task('sassdoc', function() {
+gulp.task('sassdoc', ['clean'], function() {
 	return gulp.src(sassdoc.src)
 		.pipe(plugins.sassdoc(SASSDOC_OPTIONS));
 });

@@ -7,6 +7,7 @@ console.time('Gulp Run Time');
  * Comment out what is not needed.
  */
 var tasks = [
+  'clean',
   'styles',
   'sassdoc',
   'watch',
