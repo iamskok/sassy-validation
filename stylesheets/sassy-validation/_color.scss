@@ -6,9 +6,9 @@
 /// @return {bool}
 ///
 /// @example
-///   is_color(#333)        //returns true
-///   is_color(black) 	    //returns true
-///   is_color(test)        //returns false
+///   is_color(#333)     //returns true
+///   is_color(black)    //returns true
+///   is_color(test)     //returns false
 ///
 
 @function is-color($var) {
