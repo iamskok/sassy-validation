@@ -1,31 +1,22 @@
-/**
-*
-* Tests whether `$var` is number.
-*
-* @group SassyValidation
-*
-* @param {*} $var  - check for number type
-*
-* @return {bool}
-*
-* @example
-* is_number(1)   	//returns true
-* is_number('1') 	//returns false
-* is_number(1em) 	//returns false
-*
-* @author Vova Skok
-*
-*/
+///
+/// Tests whether `$var` is number.
+///
+/// @param {*} $var - possible number type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-number(1)   				   //returns true
+///   is-number('1') 	               //returns false
+///   is-number(1em)    			   //returns false
+///   is-number('sassy-validation')    //returns false
+///
 
-@function is_number($var) {
+@function is-number($var) {
 	@if type-of($var) == number {
-
 		@return unitless($var);
-
 	}
 	@else {
-
 		@return false;
-
 	}
 }

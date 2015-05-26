@@ -3,6 +3,7 @@
 ///
 /// @require is-measure
 /// @require is-negative
+/// @require strip-units
 ///
 /// @param {*} $var - possible negative measure type variable
 ///
@@ -16,7 +17,7 @@
 ///
 
 @function is-measure-negative($var) {
-	@if is-measure($var) and is-negative($var) {
+	@if is-measure($var) and is-negative(strip-units($var)) {
 		@return true;
 	} @else {
 		@return false;

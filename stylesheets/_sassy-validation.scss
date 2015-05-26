@@ -1,4 +1,5 @@
 @import "sassy-validation/config";
+@import "sassy-validation/strip-units";
 @import "sassy-validation/bool";
 @import "sassy-validation/color";
 @import "sassy-validation/empty";
@@ -16,4 +17,4 @@
 @import "sassy-validation/measure-negative";
 @import "sassy-validation/measure-positive";
 @import "sassy-validation/validation-function";
-@import "sassy-validation/val-function";
+@import "sassy-validation/aliases";

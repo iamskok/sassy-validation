@@ -1,32 +1,23 @@
-/**
-*
-* Tests whether `$var` is positive.
-*
-* @group SassyValidation
-*
-* @require is-number
-*
-* @param {literal} $var  - check whether $var is positive
-*
-* @return {bool}
-*
-* @example
-* is-positive(1)   	//returns true
-* is-positive(0)   	//returns false
-* is-positive(-1)  	//returns false
-*
-* @author Vova Skok
-*
-*/
+///
+/// Tests whether `$var` is positive.
+///
+/// @require is-number
+///
+/// @param {*} $var - possible positive type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-positive(1)          //returns true
+///   is-positive(0)          //returns false
+///   is-positive(-1)    	  //returns false
+///   is-positive('hello')    //returns false
+///
 
 @function is-positive($var) {
     @if is-number($var) and $var > 0 {
-
         @return true;
-
     } @else {
-
         @return false;
-
     }
 }

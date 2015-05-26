@@ -6,11 +6,11 @@
 /// @return {bool}
 ///
 /// @example
-///   is_bool(true)     //returns true
-///   is_bool(false)    //returns true
-///   is_bool(test)     //returns false
-///   is_bool(1)        //returns false
-///   is_bool(null)     //returns false
+///   is-bool(true)     //returns true
+///   is-bool(false)    //returns true
+///   is-bool(test)     //returns false
+///   is-bool(1)        //returns false
+///   is-bool(null)     //returns false
 ///
 
 @function is-bool($var) {

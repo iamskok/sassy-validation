@@ -1,0 +1,18 @@
+///
+/// Validates input against various tests
+///
+/// @alias validate
+///
+/// @require validate
+///
+/// @param {value} $var - a variable to be tested
+/// @param {bool|color|empty|float|integer|list|map|measure-negative|measure-positive|measure|negative|positive|null|number|string|unit} $validations - list of validation tests to run against `$var`
+///
+/// @return {bool}
+///
+/// @throws '$var is not a known validation type.'
+///
+
+@function val($var, $validations) {
+	@return validate($var, $validations);
+}

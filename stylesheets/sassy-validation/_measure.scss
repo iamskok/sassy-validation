@@ -1,7 +1,7 @@
 ///
 /// Tests whether `$var` is measure.
 ///
-/// @param {*} $var  - possible measure type variable
+/// @param {*} $var - possible measure type variable
 ///
 /// @return {bool}
 ///
@@ -18,14 +18,12 @@
 		@if unitless($var) {
 			@return false;
 		}
-	}
-	@else {
+	} @else {
 		@return false;
 	}
-	@if not index($sv-units, unit($var)) {
-		@return false;
-	}
-	@else {
+	@if not not index($sv-units, unit($var)) {
 		@return true;
+	} @else {
+		@return false;
 	}
 }

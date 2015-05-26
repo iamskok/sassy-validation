@@ -1,0 +1,17 @@
+///
+/// Get unitless value of `$var`.
+///
+/// @group Helpers
+///
+/// @param {measure} $var
+///
+/// @return {number}
+///
+/// @example
+///   strip-units(100px) // 100
+///   strip-units(18em)  // 18
+///
+
+@function strip-units($var) {
+	@return $var / ($var * 0 + 1);
+}

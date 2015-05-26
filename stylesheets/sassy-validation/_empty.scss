@@ -6,9 +6,9 @@
 /// @return {bool}
 ///
 /// @example
-///   is_empty('')        //returns true
-///   is_empty(())        //returns true
-///   is_empty('test')    //returns false
+///   is-empty('')        //returns true
+///   is-empty(())        //returns true
+///   is-empty('test')    //returns false
 ///
 
 @function is-empty($var) {

@@ -1,29 +1,20 @@
-/**
-*
-* Tests whether `$var` is string.
-*
-* @group SassyValidation
-*
-* @param {*} $var  - check for string type
-*
-* @return {bool}
-*
-* @example
-* is_string(test) 	//returns true
-* is_string(1)    	//returns false
-*
-* @author Vova Skok
-*
-*/
+///
+/// Tests whether `$var` is string.
+///
+/// @param {*} $var  - possible string type variable
+///
+/// @return {bool}
+///
+/// @example
+///   is-string('sassy-validation')    //returns true
+///   is-string(1)    	 			   //returns false
+///   is-string(18px)    	 		   //returns false
+///
 
-@function is_string($var) {
+@function is-string($var) {
 	@if type-of($var) == string {
-
 		@return true;
-
 	} @else {
-
 		@return false;
-
 	}
 }
