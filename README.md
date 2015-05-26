@@ -4,6 +4,16 @@ SASS data type validation library.
 
 This library is a great addition to every SASS project which uses functions and/or mixins. Make sure that your functions and/or mixins are used correctly by validating inputted data.
 
+# Installation
+
+With `git`:
+
+    git clone git@github.com:SassySuit/sassy-validation.git ./
+
+With `bower`:
+
+    bower install sassy-validation --save-dev
+
 ## Examples
 
     validate(1em, measure)                  // returns true
