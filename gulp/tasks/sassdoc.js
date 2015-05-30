@@ -8,6 +8,7 @@ var SASSDOC_OPTIONS = {
 	dest: sassdoc.dest,
 	verbose: true,
     basePath: 'https://github.com/SassySuit/sassy-validation',
+    googleAnalytics: 'UA-63553761-1',
 };
 
 gulp.task('sassdoc', ['clean'], function() {
