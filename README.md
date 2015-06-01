@@ -1,8 +1,8 @@
 # sassy-validation 
 
-SASS data type validation library.
+Sass data type validation library.
 
-This library is a great addition to every SASS project which uses functions and/or mixins. Make sure that your functions and/or mixins are used correctly by validating inputted data.
+This library is a great addition to every Sass project which uses functions and/or mixins. Make sure that your functions and/or mixins are used correctly by validating inputted data.
 
 # Installation
 
