@@ -14,9 +14,5 @@
 ///
 
 @function is-null($var) {
-	@if $var == null {
-		@return true;
-	} @else {
-		@return false;
-	}
+	@return type-of($var) == 'null';
 }

@@ -13,9 +13,5 @@
 ///
 
 @function is-unit($var) {
-	@if type-of($var) == string {
-		@return if(index($sv-units, $var), true, false);
-	} @else {
-		@return false;
-	}
+	@return not not index($sv-units, $var);
 }

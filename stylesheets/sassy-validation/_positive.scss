@@ -15,9 +15,5 @@
 ///
 
 @function is-positive($var) {
-    @if is-number($var) and $var > 0 {
-        @return true;
-    } @else {
-        @return false;
-    }
+    @return is-number($var) and $var > 0;
 }

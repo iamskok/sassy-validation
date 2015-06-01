@@ -17,9 +17,5 @@
 ///
 
 @function is-measure-negative($var) {
-	@if is-measure($var) and is-negative(strip-units($var)) {
-		@return true;
-	} @else {
-		@return false;
-	}
+	@return is-measure($var) and is-negative(strip-units($var));
 }

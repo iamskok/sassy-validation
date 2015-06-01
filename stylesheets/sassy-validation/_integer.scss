@@ -16,11 +16,5 @@
 ///
 
 @function is-integer($var) {
-    @if not is-number($var) {
-        @return false;
-    }
-    @if round($var) != $var {
-        @return false;
-    }
-    @return true;
+    @return is-number($var) and round($var) == $var;
 }

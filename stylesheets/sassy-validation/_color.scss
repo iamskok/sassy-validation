@@ -12,9 +12,5 @@
 ///
 
 @function is-color($var) {
-	@if type-of($var) == color {
-		@return true;
-	} @else {
-		@return false;
-	}
+	@return type-of($var) == 'color';
 }
