@@ -32,5 +32,6 @@ https://sassysuit.github.io/sassy-validation/
 
 ## Credits
 
-[Marc Mintel](https://twitter.com/marcmintel) for his original [idea](https://medium.com/@marcmintel/validating-parameters-in-sass-a0cac60c6222
+* [Hugo Giraudel](http://hugogiraudel.com/) for code quality improvements
+* [Marc Mintel](https://twitter.com/marcmintel) for his original [idea](https://medium.com/@marcmintel/validating-parameters-in-sass-a0cac60c6222
 )
