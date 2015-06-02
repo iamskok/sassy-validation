@@ -12,14 +12,8 @@
 ///
 
 @function is-empty($var) {
-	@if type-of($var) == list and length($var) == 0 {
-		@return true;
-	} @else if $var == null  {
-		@return true;
-	} @else if type-of($var) == string and str-length($var) == 0 {
-		@return true;
-	} @else {
-		@return false;
-	}
-
+	@return 
+		(type-of($var) == 'list' and length($var) == 0) 
+		or (type-of($var) == 'null')
+		or (type-of($var) == 'string' and str-length($var) == 0);
 }

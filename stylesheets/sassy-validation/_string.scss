@@ -12,9 +12,5 @@
 ///
 
 @function is-string($var) {
-	@if type-of($var) == string {
-		@return true;
-	} @else {
-		@return false;
-	}
+	@return type-of($var) == 'string';
 }

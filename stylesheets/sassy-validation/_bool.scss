@@ -14,9 +14,5 @@
 ///
 
 @function is-bool($var) {
-	@if type-of($var) == bool {
-		@return true;
-	} @else {
-		@return false;
-	}
+	@return type-of($var) == 'bool';
 }
