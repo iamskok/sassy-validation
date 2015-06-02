@@ -14,10 +14,5 @@
 ///
 
 @function is-map($var) {
-	@if type-of($var) == map {
-		@return true;
-	}
-	@else {
-		@return false;
-	}
+	@return type-of($var) == 'map';
 }

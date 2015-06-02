@@ -13,10 +13,5 @@
 ///
 
 @function is-number($var) {
-	@if type-of($var) == number {
-		@return unitless($var);
-	}
-	@else {
-		@return false;
-	}
+	@return if(type-of($var) == 'number', unitless($var), false);
 }

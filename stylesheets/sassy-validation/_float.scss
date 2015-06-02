@@ -17,14 +17,5 @@
 ///
 
 @function is-float($var) {
-	@if $var == 0 {
-		@return false;
-	}
-	@if not is-number($var) {
-		@return false;
-	}
-	@if not is-integer($var) {
-		@return true;
-	}
-	@return false;
+	@return is-number($var) and not is-integer($var) and $var != 0;
 }

@@ -17,9 +17,5 @@
 ///
 
 @function is-measure-positive($var) {
-	@if is-measure($var) and is-positive(strip-units($var)) {
-		@return true;
-	} @else {
-		@return false;
-	}
+	@return is-measure($var) and is-positive(strip-units($var));
 }

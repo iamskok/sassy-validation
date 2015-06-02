@@ -14,10 +14,5 @@
 ///
 
 @function is-list($var) {
-	@if type-of($var) == list {
-		@return true;
-	}
-	@else {
-		@return false;
-	}
+	@return type-of($var) == 'list';
 }
