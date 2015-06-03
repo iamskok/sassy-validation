@@ -8,11 +8,13 @@ console.time('Gulp Run Time');
  */
 var tasks = [
   'clean',
+  'clean-test',
   'styles',
   'sassdoc',
   'watch',
   'default',
   'deploy',
+  'test',
 ];
 
 /**

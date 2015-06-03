@@ -4,6 +4,9 @@ var ROOT = './stylesheets/';
 // Path to build compiled assets to.
 var DEST = './build/';
 
+// Path to test assets.
+var TESTS = './tests/';
+
 // Build
 var paths = {};
 
@@ -17,12 +20,22 @@ paths.clean = DEST;
 /**
  * Styles
  *
- * Source SASS files, output to `DEST` folder
+ * Source Sass files, output to `DEST` folder
  */
 paths.styles = {
 	src:   ROOT + '_sassy-validation.scss',
 	dest:  DEST,
 	watch: ROOT + '**/*.scss',
+};
+
+/**
+ * Tests
+ *
+ * Test Sass files
+ */
+paths.tests = {
+	src:  TESTS + 'test.scss',
+	dest: TESTS,
 };
 
 /**
@@ -50,5 +63,12 @@ paths.deploy = {
  * Remove sassdoc
  */
 paths.clean = './sassdoc';
+
+/**
+ * Clean Test
+ *
+ * Remove test report
+ */
+paths.cleanTest = TESTS + 'report.css';
 
 module.exports = paths;
