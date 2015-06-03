@@ -1,6 +1,6 @@
 $sv-is-unit: test('is-unit', (
 	px: true,
-	%: true,
+	rem: true,
 	'string': false,
 	70px: false,
 	-90: false,
