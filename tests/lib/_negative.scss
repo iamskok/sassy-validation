@@ -1,0 +1,10 @@
+$sv-is-negative: test('is-negative', (
+	-10: true,
+	-2.2222: true,
+	-0.75: true,
+	-0.5rem: false,
+	0: false,
+	10: false,
+));
+
+@include run($sv-is-negative);

@@ -1,0 +1,11 @@
+$sv-is-positive: test('is-positive', (
+	1: true,
+	0.5: true,
+	0: false,
+	-9.998: false,
+	10%: false,
+	'string': false,
+));
+
+@include run($sv-is-positive);
+

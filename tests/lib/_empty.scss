@@ -1,0 +1,6 @@
+$sv-is-empty: test('is-empty', (
+	'': true,
+	'pretty full, not empty': false,
+));
+
+@include run($sv-is-empty);

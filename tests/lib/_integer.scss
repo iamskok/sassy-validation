@@ -1,0 +1,9 @@
+$sv-is-integer: test('is-integer', (
+	100: true,
+	0: true,
+	-999: true,
+	1.111: false,
+	4px: false,
+));
+
+@include run($sv-is-integer);

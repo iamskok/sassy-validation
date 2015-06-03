@@ -1,0 +1,8 @@
+$sv-is-bool: test('is-bool', (
+	true: true,
+	false: true,
+	1: false,
+	'Sass not SASS': false,
+));
+
+@include run($sv-is-bool);

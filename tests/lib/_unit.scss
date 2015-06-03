@@ -1,0 +1,9 @@
+$sv-is-unit: test('is-unit', (
+	px: true,
+	%: true,
+	'string': false,
+	70px: false,
+	-90: false,
+));
+
+@include run($sv-is-unit);

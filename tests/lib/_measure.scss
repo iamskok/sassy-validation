@@ -1,0 +1,10 @@
+$sv-is-measure: test('is-measure', (
+	4vh: true,
+	-0.5rem: true,
+	33: false,
+	3.33: false,
+	em: false,
+	1em: true,
+));
+
+@include run($sv-is-measure);

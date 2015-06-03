@@ -1,0 +1,9 @@
+$sv-is-string: test('is-string', (
+	'string': true,
+	'px': true,
+	('x', 'y', 'z'): false,
+	21: false,
+	20px: false,
+));
+
+@include run($sv-is-string);

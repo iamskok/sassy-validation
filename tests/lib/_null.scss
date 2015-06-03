@@ -1,0 +1,8 @@
+$sv-is-null: test('is-null', (
+	null: true,
+	false: false,
+	0: false,
+	'': false,
+));
+
+@include run($sv-is-null);

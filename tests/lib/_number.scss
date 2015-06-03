@@ -1,0 +1,11 @@
+$sv-is-number: test('is-number', (
+	1: true,
+	0.5: true,
+	0: true,
+	-9.998: true,
+	10px: false,
+	'NaN': false,
+));
+
+@include run($sv-is-number);
+

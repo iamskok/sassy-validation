@@ -1,0 +1,10 @@
+$sv-is-float: test('is-float', (
+	1.6180339887: true,
+	-7.77: true,
+	0: false,
+	13: false,
+	-4: false,
+	1em: false,
+));
+
+@include run($sv-is-float);

@@ -1,0 +1,8 @@
+$sv-is-color: test('is-color', (
+	#333: true,
+	black: true,
+	rgba(1,1,1, 0.5): true,
+	'Sass not SASS': false,
+));
+
+@include run($sv-is-color);

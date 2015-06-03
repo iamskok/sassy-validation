@@ -1,0 +1,10 @@
+$sv-is-measure-negative: test('is-measure-negative', (
+	-10px: true,
+	30em: false,
+	100: false,
+	1.111: false,
+	px: false,
+));
+
+@include run($sv-is-measure-negative);
+

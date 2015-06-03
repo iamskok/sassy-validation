@@ -1,0 +1,10 @@
+$sv-is-measure-positive: test('is-measure-positive', (
+	4vh: true,
+	-0.5rem: false,
+	33: false,
+	3.33: false,
+	em: false,
+));
+
+@include run($sv-is-measure-positive);
+

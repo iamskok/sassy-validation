@@ -1,0 +1,8 @@
+$sv-is-list: test('is-list', (
+	(1, 2, 3): true,
+	('A', 'B', 'C', ('D', 'E')): true,
+	('Z'): false,
+	1.111: false,
+));
+
+@include run($sv-is-list);

@@ -1,0 +1,10 @@
+$sv-is-map: test('is-map', (
+	(1: '1x', 2: '2x', 3: '3x'): true,
+	(1: 'a', 2: 'b', 3: (4: 'c', 5:  'd'), 6: 'e'): true,
+	(1, 2, 3, 4, 5): false,
+	('A', 'B', 'C', ('D', 'E')): false,
+	1.111: false,
+));
+
+@include run($sv-is-map);
+
