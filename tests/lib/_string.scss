@@ -1,7 +1,7 @@
 $sv-is-string: test('is-string', (
 	'string': true,
 	'px': true,
-	('x', 'y', 'z'): false,
+	(('x', 'y', 'z'),): false,
 	21: false,
 	20px: false,
 ));
