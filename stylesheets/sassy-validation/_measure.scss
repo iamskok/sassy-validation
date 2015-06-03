@@ -14,7 +14,6 @@
 ///
 
 @function is-measure($var) {
-	@return type-of($var) == 'number' 
-	and not unitless($var) 
-	and index($sv-units, unit($var));
+	@return type-of($var) == 'number'
+	and not not index($sv-units, unit($var));
 }
