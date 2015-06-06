@@ -1,0 +1,9 @@
+$sv-strip-units: test('strip-units', (
+	1px: 1,
+	0.77777px: 0.77777,
+	-20em: -20,
+	10: 10,
+	0: 0,
+));
+
+@include run($sv-strip-units);

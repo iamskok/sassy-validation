@@ -1,5 +1,6 @@
 @import '../stylesheets/sassy-validation';
 @import 'SassyTester/stylesheets/main';
+@import "lib/strip-units";
 @import "lib/bool";
 @import "lib/color";
 @import "lib/empty";
@@ -16,3 +17,4 @@
 @import "lib/negative";
 @import "lib/measure-negative";
 @import "lib/measure-positive";
+
