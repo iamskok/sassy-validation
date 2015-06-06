@@ -5,16 +5,18 @@
   "authors": [
     "Vova Skok <skok@vova.io>"
   ],
-  "description": "SASS data type validation library",
+  "description": "Sass data type validation library",
   "main": "stylesheets/_sassy-validation.scss",
   "keywords": [
+    "Sass",
+    "library",
+    "scss",
+    "sass",
+    "css",
+    "Sassy",
     "utility",
     "helper",
     "validation",
-    "data",
-    "SASS",
-    "SCSS",
-    "CSS"
   ],
   "license": "MIT",
   "ignore": [

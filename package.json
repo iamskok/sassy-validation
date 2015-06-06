@@ -1,7 +1,7 @@
 {
   "name": "sassy-validation",
-  "version": "0.3.1",
-  "description": " SASS library for validation data types",
+  "version": "0.3.2",
+  "description": "Sass data type validation library",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,11 +11,15 @@
     "url": "https://github.com/SassySuit/sassy-validation.git"
   },
   "keywords": [
-    "SASS",
+    "Sass",
     "library",
-    "CSS",
-    "SCSS",
-    "Sassy"
+    "scss",
+    "sass",
+    "css",
+    "Sassy",
+    "utility",
+    "helper",
+    "validation",
   ],
   "author": "Vova Skok",
   "license": "MIT",
