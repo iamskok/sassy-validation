@@ -8,7 +8,7 @@ Sassy-validation is a handy addition for every Sass project which uses `@functio
 
 ## Documentation
 
-Sassy-validation [Official Documentation](https://github.com/SassySuit/sassy-validation)
+Sassy-validation [Official Documentation](http://sassysuit.github.io/sassy-validation)
 
 ## Installation
 
