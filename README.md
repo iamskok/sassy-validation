@@ -10,6 +10,11 @@ Sassy-validation is a handy addition for every Sass project which uses `@functio
 
 Sassy-validation [Official Documentation](http://sassysuit.github.io/sassy-validation)
 
+## Requirements
+
+* Ruby Sass `v3.2` and higher 
+* LibSass `v3.1` and higher
+
 ## Installation
 
 _Git_:
