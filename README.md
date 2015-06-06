@@ -12,11 +12,11 @@ Sassy-validation [Official Documentation](https://github.com/SassySuit/sassy-val
 
 ## Installation
 
-`git`:
+_Git_:
 
     git clone git@github.com:SassySuit/sassy-validation.git ./
 
-`bower`:
+_Bower_:
 
     bower install sassy-validation --save-dev
 
