@@ -1,16 +1,22 @@
-# sassy-validation 
+# Sassy-validation 
 
-Sass data type validation library.
+Sass _data type_ validation library.
 
-This library is a great addition to every Sass project which uses functions and/or mixins. Make sure that your functions and/or mixins are used correctly by validating inputted data.
+Sassy-validation is a handy addition for every Sass project which uses `@functions` and/or `@mixins`. 
 
-# Installation
+__Validate inputted data or don’t Sass at all !__
 
-With `git`:
+## Documentation
+
+Sassy-validation [Official Documentation](https://github.com/SassySuit/sassy-validation)
+
+## Installation
+
+`git`:
 
     git clone git@github.com:SassySuit/sassy-validation.git ./
 
-With `bower`:
+`bower`:
 
     bower install sassy-validation --save-dev
 
@@ -25,10 +31,6 @@ With `bower`:
     validate(1 2 3 4 5, list)               // returns true
     validate(-99999, negative)              // returns true
     validate(px, unit)                      // returns true
-
-## Documentation 
-
-https://sassysuit.github.io/sassy-validation/
 
 ## Credits
 
