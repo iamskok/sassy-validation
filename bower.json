@@ -16,7 +16,7 @@
     "Sassy",
     "utility",
     "helper",
-    "validation",
+    "validation"
   ],
   "license": "MIT",
   "ignore": [
