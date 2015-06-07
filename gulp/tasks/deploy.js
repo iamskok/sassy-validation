@@ -4,7 +4,7 @@ var sassdoc = require('../paths').sassdoc;
 
 gulp.task('copy-html', function() {
     gulp.src(sassdoc.verification)
-    .pipe(gulp.dest(sassdoc));
+    .pipe(gulp.dest(sassdoc.dest));
 });
 
 gulp.task('deploy', ['copy-html'], function() {
