@@ -46,6 +46,7 @@ paths.tests = {
 paths.sassdoc = {
 	src: ROOT + '**/*.scss',
 	dest: './sassdoc/',
+	verification: './googleefe0dcc2a133965d.html',
 };
 
 /**
