@@ -3,6 +3,7 @@
   "version": "0.4.0",
   "description": "Sass data type validation library",
   "main": "gulpfile.js",
+  "eyeglass": "eyeglass-exports.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +20,8 @@
     "Sassy",
     "utility",
     "helper",
-    "validation"
+    "validation",
+    "eyeglass-module"
   ],
   "author": "Vova Skok",
   "license": "MIT",
