@@ -25,6 +25,8 @@ _Bower_:
 
     bower install sassy-validation --save-dev
 
+Sassy-validation can also be used as _[Eyeglass](https://github.com/sass-eyeglass/eyeglass)_ module.
+
 ## Examples
 
     validate(1em, measure)                  // returns true
