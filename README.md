@@ -8,9 +8,7 @@ Sassy-validation is a handy addition for every Sass project which uses `@functio
 
 [__SassMeister Demo__](http://sassmeister.com/gist/cad7bc024664d2e4e15d)
 
-## Documentation
-
-Sassy-validation [Official Documentation](http://sassysuit.github.io/sassy-validation)
+## [Documentation](http://sassysuit.github.io/sassy-validation)
 
 ## Requirements
 
