@@ -1,10 +1,6 @@
 # Sassy-validation 
 
-Sass type validation library. Validate inputted data or don’t *Sass* at all.
-
-Sassy-validation is a handy addition for Sass projects which rely on `@functions` and/or `@mixins`. 
-
-[__SassMeister Demo__](http://sassmeister.com/gist/cad7bc024664d2e4e15d)
+Sass type validation library. Validate inputted data or don’t *Sass* at all. Sassy-validation is a handy addition for Sass projects which rely on `@functions` and/or `@mixins`. 
 
 ## [Documentation](http://sassysuit.github.io/sassy-validation)
 
@@ -23,7 +19,10 @@ _Bower_:
 
     bower install sassy-validation --save-dev
 
+
 ## Examples
+
+[__SassMeister Demo__](http://sassmeister.com/gist/cad7bc024664d2e4e15d)
 
     validate(1em, measure)                  // returns true
     validate(13, measure)                   // returns false
