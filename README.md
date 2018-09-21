@@ -1,10 +1,8 @@
 # Sassy-validation 
 
-Sass _data type_ validation library.
+Sass type validation library. Validate inputted data or don’t *Sass* at all.
 
-### __Validate inputted data or don’t Sass at all !__
-
-Sassy-validation is a handy addition for every Sass project which uses `@functions` and/or `@mixins`. 
+Sassy-validation is a handy addition for Sass projects which rely on `@functions` and/or `@mixins`. 
 
 [__SassMeister Demo__](http://sassmeister.com/gist/cad7bc024664d2e4e15d)
 
