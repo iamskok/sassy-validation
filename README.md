@@ -6,16 +6,16 @@ Sass type validation library. Validate inputted data or don’t *Sass* at all. S
 
 ## Requirements
 
-* Ruby Sass `v3.2` and higher 
-* LibSass `v3.1` and higher
+* Ruby Sass <= `v3.2`
+* LibSass <= `v3.1`
 
 ## Installation
 
-_Git_:
+Git:
 
     git clone git@github.com:SassySuit/sassy-validation.git ./
 
-_Bower_:
+Bower:
 
     bower install sassy-validation --save-dev
 
