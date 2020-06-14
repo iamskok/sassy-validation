@@ -35,6 +35,6 @@
     "gulp-gh-pages": "0.5.4",
     "gulp-ruby-sass": "1.4.0",
     "jshint": "2.11.1",
-    "sassdoc": "2.7.1"
+    "sassdoc": "2.7.2"
   }
 }
